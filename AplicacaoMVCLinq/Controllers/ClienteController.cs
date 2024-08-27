@@ -7,6 +7,10 @@ namespace AplicacaoMVCLinq.Controllers
     {
         public IActionResult Index()
         {
+            return View();
+        }
+        public IActionResult GetClientes()
+        {
             List<Clientes> listaClientes = new List<Clientes>();
 
             Clientes c1 = new Clientes(1, "Alice", "alice@example.com", "1234-5678", new DateOnly(2000, 6, 1));
